@@ -7,7 +7,7 @@ public class Main {
 		boolean l = true;
 		while (l) {
 			Menu.main();
-			switch (InputControl.inter("英数")) {
+			switch (InputControl.inter("英")) {
 			case 1:
 				Menu.creat();
 				BookControl.creat();

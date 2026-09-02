@@ -24,21 +24,21 @@ public class BookDetail {
 							+ "、返却期限:" + book.getDeadline()
 							+ "、貸出状況:" + loan);
 				}
-				Menu.updata2();
-				switch (InputControl.inter("英数")) {
-				case 1:
-					BookControl.updata(a);
-					break;
-
-				case 2:
-					BookControl.delete(a);
-					break;
-
-				default:
-					break;
-				}
 
 			}
+		}
+		Menu.updata2();
+		switch (InputControl.inter("英数")) {
+		case 1:
+			BookControl.updata(a);
+			break;
+
+		case 2:
+			BookControl.delete(a);
+			break;
+
+		default:
+			break;
 		}
 	}
 

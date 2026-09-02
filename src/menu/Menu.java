@@ -24,6 +24,7 @@ public class Menu {
 			System.out.println(book);
 		}
 		System.out.println("================");
+		System.out.println("1:詳細");
 		System.out.println("0:メインメニュー");
 	}
 

@@ -14,7 +14,14 @@ public class Main {
 				break;
 			case 2:
 				Menu.list();
-				Menu.detail(InputControl.inter("id"));
+				switch (InputControl.inter("英数")) {
+				case 0:
+					break;
+
+				default:
+					Menu.detail(InputControl.inter("id"));
+					break;
+				}
 				break;
 			case 3:
 				Menu.list();

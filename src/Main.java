@@ -13,14 +13,20 @@ public class Main {
 				BookControl.creat();
 				break;
 			case 2:
-				Menu.list();
-				switch (InputControl.inter("英数")) {
-				case 0:
-					break;
-
-				default:
-					Menu.detail(InputControl.inter("id"));
-					break;
+				boolean listLoop = true;
+				while (listLoop) {
+					Menu.list();
+					switch (InputControl.inter("英数")) {
+					case 1:
+						Menu.detail(InputControl.inter("id"));
+						break;
+					case 2:
+						BookControl.sortKinds();
+						break;
+					case 0:
+						listLoop = false;
+						break;
+					}
 				}
 				break;
 			case 3:
@@ -34,6 +40,7 @@ public class Main {
 			case 0:
 				System.out.println("終了します");
 				l = false;
+				break;
 			default:
 			}
 		}

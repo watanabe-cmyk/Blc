@@ -25,18 +25,7 @@ public class Menu {
 		}
 		System.out.println("================");
 		System.out.println("1:詳細");
-		System.out.println("0:メインメニュー");
-	}
-
-	public static void list2() {
-		System.out.println("================");
-		DataRetention.getList().sort(
-				(book1, book2) -> book1.getId() - book2.getId());
-		for (Book book : DataRetention.getList()) {
-			System.out.println(book);
-		}
-		System.out.println("================");
-		System.out.println("1:詳細");
+		System.out.println("2:並び替え");
 		System.out.println("0:メインメニュー");
 	}
 

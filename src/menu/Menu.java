@@ -12,6 +12,7 @@ public class Menu {
 		System.out.println("一覧の表示は『２』");
 		System.out.println("貸出は『3』");
 		System.out.println("返却は『4』");
+		System.out.println("検索は『5』");
 		System.out.println("終了は『0』");
 		System.out.println("================");
 	}
@@ -24,8 +25,8 @@ public class Menu {
 			System.out.println(book);
 		}
 		System.out.println("================");
-		System.out.println("1:詳細");
-		System.out.println("2:並び替え");
+		System.out.println("1:並び替え");
+		System.out.println("2:詳細");
 		System.out.println("0:メインメニュー");
 	}
 

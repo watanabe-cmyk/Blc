@@ -18,10 +18,10 @@ public class Main {
 					Menu.list();
 					switch (InputControl.inter("英数")) {
 					case 1:
-						Menu.detail(InputControl.inter("id"));
+						BookControl.sortKinds();
 						break;
 					case 2:
-						BookControl.sortKinds();
+						Menu.detail(InputControl.inter("id"));
 						break;
 					case 0:
 						listLoop = false;
@@ -36,6 +36,9 @@ public class Main {
 			case 4:
 				Menu.list();
 				BookControl.returnbook();
+				break;
+			case 5:
+				BookControl.search(InputControl.str("検索するタイトル"));
 				break;
 			case 0:
 				System.out.println("終了します");

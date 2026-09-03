@@ -27,4 +27,12 @@ public class BookControl {
 	public static void sortKinds() {
 		DataRetention.getList().sort((book1, book2) -> book1.getKinds().compareTo(book2.getKinds()));
 	}
+
+	public static void search(String title) {
+		for (Book book : DataRetention.getList()) {
+			if (book.getTitle().contains(title)) {
+				System.out.println("ID: " + book.getId() + ", タイトル: " + book.getTitle());
+			}
+		}
+	}
 }
